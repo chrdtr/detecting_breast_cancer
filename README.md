@@ -49,7 +49,7 @@ These models have been applied as follows:
      results for each diagnosis
    - The linear kernel SVM-model was fitted and then evaluated on the test data
    - It delivered an accuracy of <b>96.49%</b> and 3 false negative results.
-   - To further improve the mode, an alternative was recreated, scaling the data that
+   - To further improve the model, an alternative was created, scaling the data that
      has been used with the min-max-normalization method
    - It delivered an accuracy of <b>98.25%</b> and 2 false negative results.
 
@@ -69,6 +69,16 @@ These models have been applied as follows:
 
  
  # 4. Random forests (RF)
+
+- Data has been imported, sense-checked and statistically described, one redundant column was dropped
+- Data was imbalanced, but just like decision trees, as random forests are robust to unequal y-distributions,
+  it was decided to deploy the model without the further use of balancing methods
+- The model was fitted and delivered a <b>97.08%</b> accuracy on the test data and 4 false negative results.
+- To further improve the model, an alternative was created, scaling the data that
+  has been used with the min-max-normalization method
+- It delivered an accuracy of <b>98.25%</b> and 1 false negative results.
+
+<b>The random forest model provides a high accuracy of 98.25% and only 1 FN predictions.</b>
 
 
 
