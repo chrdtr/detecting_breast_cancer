@@ -33,14 +33,25 @@ These models have been applied as follows:
    - As data was imbalanced, SMOTE was applied for balancing. y-variable then showed 249
      results for each diagnosis
    - The logistic regression model was fitted and then evaluated on the test data
-   - It delivered an accuracy of <b>76%</b>. As the false negatives (20) matter the most in this specific
+   - It delivered an accuracy of <b>76.02%</b>. As the false negatives (20) matter the most in this specific
      case, it was tried to reduce them by altering the threshold for the prediction
    - This alternative delivered low false negatives (3), but came at the cost of further
-     decreasing accuracy to 63%.
+     decreasing accuracy to 62.57%.
 
 <b>In this context, the predictive power of the model is not sufficient.</b>
 
  # 2. Support vector machines (SVM)
+
+   - Data has been imported, sense-checked and statistically described
+   - As data was imbalanced, SMOTE was applied for balancing. y-variable then showed 249
+     results for each diagnosis
+   - The linear kernel SVM-model was fitted and then evaluated on the test data
+   - It delivered an accuracy of <b>96.49%</b> and 3 false negative results.
+   - To further improve the mode, an alternative was recreated, scaling the data that
+     has been used with the min-max-normalization method
+   - It delivered an accuracy of <b>98.25%</b> and 2 false negative results.
+
+<b>The SVM-model provides a high accuracy of 98.25% and only 2 FN predictions.</b>
  
  # 3. Decision trees (DT)
  
