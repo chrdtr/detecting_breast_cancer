@@ -26,7 +26,7 @@ These models have been applied as follows:
   ### False negatives: 20 (v2: 2)
   
    - Data has been imported, sense-checked and statistically described
-   - One column was dropped and the regression model was fitted on the
+   - One redundant column was dropped and the regression model was fitted on the
      whole dataset to check for regression assumptions
    - VIF values indicated multicollinearity, as all variables showed VIF values > 10
    - Only the five varialbes with the lowest VIF factos were kept, leading to VIF < 10
@@ -41,8 +41,10 @@ These models have been applied as follows:
 <b>In this context, the predictive power of the model is not sufficient.</b>
 
  # 2. Support vector machines (SVM)
+   ### Accuracy: 98.25%
+   ### False negatives: 2
 
-   - Data has been imported, sense-checked and statistically described
+   - Data has been imported, sense-checked and statistically described, one redundant column was dropped
    - As data was imbalanced, SMOTE was applied for balancing. y-variable then showed 249
      results for each diagnosis
    - The linear kernel SVM-model was fitted and then evaluated on the test data
@@ -51,9 +53,20 @@ These models have been applied as follows:
      has been used with the min-max-normalization method
    - It delivered an accuracy of <b>98.25%</b> and 2 false negative results.
 
-<b>The SVM-model provides a high accuracy of 98.25% and only 2 FN predictions.</b>
+<b>The updated SVM-model provides a high accuracy of 98.25% and only 2 FN predictions.</b>
  
  # 3. Decision trees (DT)
+   ### Accuracy: 97.07%
+   ### False negatives: 2
+
+  - Data has been imported, sense-checked and statistically described, one redundant column was dropped
+  - Data was imbalanced, but as decision tree models are robust to unequal y-distributions, it was
+    decided to deploy the model without the further use of balancing methods
+  - The model was fitted and delivered a <b>94.15%</b> accuracy on the test data.
+  - In the next step the tree was pruned, resulting in a accuracy of <b>97.07%</b> and 2 false negative results.
+
+<b>The decision tree model provides a high accuracy of 98.25% and only 2 FN predictions.</b>
+
  
  # 4. Random forests (RF)
 
