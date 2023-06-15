@@ -4,8 +4,11 @@
 **the highest accuracy of 98.25%. The random forest model, however, was able to reduce false**
 **negatives (FN) to a count of 1. Therefore, the random forest model should be deployed.**
 
+
+![Screenshot 2023-06-15 at 11 35 24](https://github.com/chrdtr/detecting_breast_cancer/assets/124095561/15f0af52-d4ff-4ef4-b614-b6d7bed131c7)
+
 <p align="center" width="100%">
-    <img width="33%" src="https://github.com/chrdtr/detecting_breast_cancer/assets/124095561/4cb96fa0-2c50-455c-b334-b00071552b96"> 
+    <img width="33%" src="https://github.com/chrdtr/detecting_breast_cancer/assets/124095561/15f0af52-d4ff-4ef4-b614-b6d7bed131c7"> 
 </p>
 
 
