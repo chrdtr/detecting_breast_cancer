@@ -1,11 +1,27 @@
-# Detecting breast cancer:
+# Analysis report: Detecting breast cancer
+
+**Summary: For the specific use case, the random forest model received (with the SVM model)**
+**the highest accuracy of 98.25%. The random forest model, however, was able to reduce false**
+**negatives (FN) to a count of 1. Therefore, the random forest model should be deployed.**
+
+<p align="center" width="100%">
+    <img width="33%" src="https://github.com/chrdtr/detecting_breast_cancer/assets/124095561/4cb96fa0-2c50-455c-b334-b00071552b96"> 
+</p>
+
+
+### Analytical approach:
 
 A dataset has been provided for analysis, containing different features which all have been measured during breast
 cancer scans. The features have been computed from digitised images of a fine needle aspiration (FNA) of a breast mass.
+These features are radius, texture, perimeter, area, smoothness, compactness, concavity, concave points, symmetry and fractal dimension.
+They have been recorded using the mean, standard error and largest of these features for each image, resulting in 30 features. (10*3)
 
 The main goal is to make predictions whether or not potential features could lead to a diagnosis of breast cancer. To 
 achieve this, it was decided to train and test different machine learning models on the data provided. After validation,
 the model delivering the best predictions should be chosen. 
+
+As false negative (FN) predictions will have the most critical influence (predicting healthy, is cancer), the
+main goal besides achieving a high accuracy is to minimize FNs.
 
 As the output variable is binary, we are facing a classification problem:
   
@@ -19,7 +35,7 @@ To make and compare predictions, the following machine learning models have been
   3. Decision trees (DT)
   4. Random forests (RF)
 
-These models have been applied as follows:
+The models have been developed as follows:
 
 # 1. Binary logistic regression (BLR)
   ### Accuracy: 76% (v2: 63%)
@@ -69,7 +85,9 @@ These models have been applied as follows:
 
  
  # 4. Random forests (RF)
-
+   ### Accuracy: 98.25%
+   ### False negatives: 1
+   
 - Data has been imported, sense-checked and statistically described, one redundant column was dropped
 - Data was imbalanced, but just like decision trees, as random forests are robust to unequal y-distributions,
   it was decided to deploy the model without the further use of balancing methods
@@ -79,6 +97,10 @@ These models have been applied as follows:
 - It delivered an accuracy of <b>98.25%</b> and 1 false negative results.
 
 <b>The random forest model provides a high accuracy of 98.25% and only 1 FN predictions.</b>
+
+
+
+
 
 
 
