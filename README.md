@@ -1,6 +1,6 @@
 # Analysis report: Detecting breast cancer
 
-**Summary: For the specific use case, the random forest model received (with the SVM model)**
+**Summary: For the specific use case, the random forest model achieved (with the SVM model)**
 **the highest accuracy of 98.25%. The random forest model, however, was able to reduce false**
 **negatives (FN) to a count of 1. Therefore, the random forest model should be deployed.**
 
