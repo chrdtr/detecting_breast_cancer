@@ -1,3 +1,7 @@
+Disclaimer: The data used for the development of the different algorithms was provided by London School of 
+Economics and Political Science (LSE) for research purposes as part of their Data Analytics Career Accelerator program.
+
+
 # Analysis report: Detecting breast cancer
 
 **Summary: For the specific use case, the random forest model achieved (with the SVM model)**
@@ -99,6 +103,19 @@ The models have been developed as follows:
 
 <b>The random forest model provides a high accuracy of 98.25% and only 1 FN predictions.</b>
 
+# Limitations:
+
+- The different models were trained on a dataset containing only 569 records. To increase reliability of
+  the predictions, the dataset should be continuously expanded and models further tested on unseen data
+- Data quality has not been an issue. In a real-life scenario, different data issues should be regarded:
+    - Where is the data coming from? From a single hospital or doctor, or more than one?
+    - Are there different measurement techniques?
+    - Does different measuring equipment produce different results?
+    - How should we tread missing values?
+- Before joining different datasets, how is the balance of the target variable distributed over different datasets?
+  Are distributions the same, or do they differ between different sources?
+- Do the sources themselves difffer? Are we facing different demographies in different datasets, which might could
+  lead to different results in measuring the cancer cells?
 
 
 
@@ -108,7 +125,3 @@ The models have been developed as follows:
 
 
 
-
-
-
-The data was provided by London School of Economics and Political Science (LSE), as part of its Data Analytics Career Accelerator program.
