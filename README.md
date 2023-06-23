@@ -18,7 +18,7 @@ These features are radius, texture, perimeter, area, smoothness, compactness, co
 They have been recorded using the mean, standard error and largest of these features for each image, resulting in 30 features. (10*3)
 
 The data which was used for the development of the different algorithms was provided by London School of 
-Economics and Political Science (LSE) for research purposes. Data has already be preprocessed.
+Economics and Political Science (LSE) for research purposes. Data has already been preprocessed.
 
 The main goal is to make predictions whether or not potential features could lead to a diagnosis of breast cancer. To 
 achieve this, it was decided to train and test different machine learning models on the data provided. After validation,
