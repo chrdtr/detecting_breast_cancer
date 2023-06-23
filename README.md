@@ -1,7 +1,3 @@
-Disclaimer: The data used for the development of the different algorithms was provided by London School of 
-Economics and Political Science (LSE) for research purposes as part of their Data Analytics Career Accelerator program.
-
-
 # Analysis report: Detecting breast cancer
 
 **Summary: For the specific use case, the random forest model achieved (with the SVM model)**
@@ -20,6 +16,9 @@ A dataset has been provided for analysis, containing different features which al
 cancer scans. The features have been computed from digitised images of a fine needle aspiration (FNA) of a breast mass.
 These features are radius, texture, perimeter, area, smoothness, compactness, concavity, concave points, symmetry and fractal dimension.
 They have been recorded using the mean, standard error and largest of these features for each image, resulting in 30 features. (10*3)
+
+The data which was used for the development of the different algorithms was provided by London School of 
+Economics and Political Science (LSE) for research purposes. Data has already be preprocessed.
 
 The main goal is to make predictions whether or not potential features could lead to a diagnosis of breast cancer. To 
 achieve this, it was decided to train and test different machine learning models on the data provided. After validation,
