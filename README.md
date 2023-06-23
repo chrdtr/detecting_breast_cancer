@@ -76,16 +76,16 @@ The models have been developed as follows:
 <b>The updated SVM-model provides a high accuracy of 98.25% and only 2 FN predictions.</b>
  
  # 3. Decision trees (DT)
-   ### Accuracy: 97.07%
-   ### False negatives: 2
+   ### Accuracy: 96.49%
+   ### False negatives: 3
 
   - Data has been imported, sense-checked and statistically described, one redundant column was dropped
   - Data was imbalanced, but as decision tree models are robust to unequal y-distributions, it was
     decided to deploy the model without the further use of balancing methods
   - The model was fitted and delivered a <b>94.15%</b> accuracy on the test data.
-  - In the next step the tree was pruned, resulting in a accuracy of <b>97.07%</b> and 2 false negative results.
+  - In the next step the tree was pruned, resulting in a accuracy of <b>96.49%</b> and 3 false negative results.
 
-<b>The decision tree model provides a high accuracy of 98.25% and only 2 FN predictions.</b>
+<b>The decision tree model provides a high accuracy of 96.49% and only 3 FN predictions.</b>
 
  
  # 4. Random forests (RF)
